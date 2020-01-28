@@ -7,10 +7,11 @@
     tools:context=".MainActivity"
     android:background="@color/backGround">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
@@ -143,21 +144,17 @@
                 <ImageButton
                     android:layout_width="50dp"
                     android:layout_height="50dp"
+                    android:id="@+id/bluetooth"
+                    android:background="@drawable/bluetoothbutton"
+                    android:layout_margin="15dp"/>
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:id="@+id/coaxial"
                     android:background="@drawable/coaxialbutton"
                     android:layout_margin="15dp"/>
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/pc"
-                    android:background="@drawable/pcbutton"
-                    android:layout_margin="15dp"/>
-                <ImageButton
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:id="@+id/aux"
-                    android:background="@drawable/auxbutton"
-                    android:layout_margin="15dp"/>
+
+
             </LinearLayout>
         </LinearLayout>
         <!-- 4 -->
@@ -176,8 +173,15 @@
         <ImageButton
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:id="@+id/bluetooth"
-            android:background="@drawable/bluetoothbutton"
+            android:id="@+id/pc"
+            android:background="@drawable/pcbutton"
+            android:layout_margin="15dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/aux"
+            android:background="@drawable/auxbutton"
             android:layout_margin="15dp"/>
     </LinearLayout>
     </LinearLayout>
@@ -197,7 +201,7 @@
                 android:textSize="20sp"
                 android:textColor="#ffffff"
                 android:text="EDIFIER"
-                android:layout_alignParentTop="true"></TextView>
+                android:layout_alignParentTop="true"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -206,7 +210,7 @@
                 android:textSize="15sp"
                 android:textColor="#ffffff"
                 android:text="RC600A"
-                android:layout_below="@+id/textEdifier"></TextView>
+                android:layout_below="@+id/textEdifier"/>
 
         </RelativeLayout>
     </LinearLayout>

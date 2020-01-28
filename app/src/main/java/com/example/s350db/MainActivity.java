@@ -6,8 +6,7 @@ import androidx.appcompat.widget.SwitchCompat;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.hardware.ConsumerIrManager;
-import android.media.Image;
-import android.media.ImageReader;
+
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Vibrator;
